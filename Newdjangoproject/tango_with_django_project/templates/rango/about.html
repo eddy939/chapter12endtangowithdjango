@@ -1,0 +1,18 @@
+{% extends 'rango/base.html' %}
+
+{% load staticfiles %}<!-- New Line-->
+
+{% block title %}{{ about }}{% endblock %}
+
+{% block body_block %}
+
+
+        <h1>Including Static Media</h1>
+        This is the About Page! <strong>{{ boldmessage }}</strong><br />
+
+        <img src="{% static "images/fridah.jpg"%}" alt="Picture of About"/> <!-- New Line -->
+
+
+<p> visits: {{ visits }}</p>
+
+{% endblock %}
